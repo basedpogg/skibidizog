@@ -1,0 +1,997 @@
+[23:54:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/TownyChat-0.117.jar'...
+[23:54:04] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins/ExoticGarden v1.6.3.jar'...
+[23:54:04] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/Slimefun4-Dev.jar'...
+[23:54:05] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins/ExoticGarden v1.6.3.jar' in 611ms.
+[23:54:05] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/TownyChat-0.117.jar' in 651ms.
+[23:54:06] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/Slimefun4-Dev.jar' in 1128ms.
+[23:54:10] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[23:54:11] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[23:54:11] [ServerMain/INFO]: Found new data pack paper, loading it automatically
+[23:54:12] [ServerMain/INFO]: Loaded 1175 recipes
+[23:54:13] [ServerMain/INFO]: Loaded 1276 advancements
+[23:54:13] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[23:54:13] [Server thread/INFO]: Loading properties
+[23:54:13] [Server thread/INFO]: This server is running Paper version 1.20.6-149-ver/1.20.6@6e71f41 (2024-08-24T09:37:06Z) (Implementing API version 1.20.6-R0.1-SNAPSHOT)
+[23:54:14] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:54:14] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:54:14] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[23:54:14] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[23:54:15] [Server thread/INFO]: Default game type: SURVIVAL
+[23:54:15] [Server thread/INFO]: Generating keypair
+[23:54:15] [Server thread/INFO]: Starting Minecraft server on *:25565
+[23:54:15] [Server thread/INFO]: Using epoll channel type
+[23:54:15] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[23:54:15] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[23:54:16] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[23:54:23] [Server thread/WARN]: Legacy plugin ExoticGarden v1.6.3 does not specify an api-version.
+[23:54:23] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'ExoticGarden v1.6.3.jar' in folder 'plugins/.paper-remapped'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: me/mrCookieSlime/CSCoreLibPlugin/general/Inventory/Item/CustomPotion
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:129) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:36) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:532) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:286) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1136) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NoClassDefFoundError: me/mrCookieSlime/CSCoreLibPlugin/general/Inventory/Item/CustomPotion
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.CustomPotion
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.base/java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:534) ~[?:?]
+	at java.base/java.lang.Class.forName(Class.java:513) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:78) ~[paper-api-1.20.6-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	... 9 more
+[23:54:23] [Server thread/INFO]: [SpigotLibraryLoader] [LoneLibs] Loading 1 libraries... please wait
+[23:54:23] [Server thread/INFO]: [SpigotLibraryLoader] [LoneLibs] Loaded library /workspaces/skibidizog/servidor_minecraft/libraries/org/fusesource/jansi/jansi/2.4.1/jansi-2.4.1.jar
+[23:54:23] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.2.1
+[23:54:23] [Server thread/INFO]: [ViaVersion] ViaVersion 5.2.1 is now loaded. Registering protocol transformers and injecting...
+[23:54:24] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[23:54:24] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[23:54:24] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[23:54:24] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[23:54:25] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.153
+[23:54:27] [Server thread/INFO]: [Slimefun] Loading server plugin Slimefun vDev - 1159
+[23:54:27] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.3.0
+[23:54:27] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.2.1
+[23:54:27] [Server thread/INFO]: [Towny] Loading server plugin Towny v0.101.1.0
+[23:54:27] [Server thread/INFO]: [RealisticSeasons] Loading server plugin RealisticSeasons v10.8.0
+[23:54:27] [Server thread/INFO]: [LoneLibs] Loading server plugin LoneLibs v1.0.63
+[23:54:27] [Server thread/INFO]: [TownyChat] Loading server plugin TownyChat v0.117
+[23:54:27] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.5.2
+[23:54:27] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:54:27] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.153
+[23:54:28] [Server thread/INFO]:         __    
+[23:54:28] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.153
+[23:54:28] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[23:54:28] [Server thread/INFO]: 
+[23:54:28] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[23:54:28] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[23:54:28] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[23:54:28] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[23:54:28] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1150ms)
+[23:54:28] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.3.0
+[23:54:28] [Server thread/INFO]: [LoneLibs] Enabling LoneLibs v1.0.63
+[23:54:28] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.5.2
+[23:54:29] [Server thread/WARN]: [SkinsRestorer] You must agree to the rules at 'commands.perSkinPermissionsConsent' in the config to use per skin permissions.
+[23:54:29] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.6.
+[23:54:30] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[23:54:30] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[23:54:30] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[23:54:30] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[23:54:30] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[23:54:30] [Server thread/INFO]: Preparing level "world"
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.5.2
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: ae257f6
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[23:54:30] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[23:54:31] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[23:54:41] [Server thread/INFO]: Time elapsed: 10323 ms
+[23:54:41] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[23:54:41] [Server thread/INFO]: Time elapsed: 228 ms
+[23:54:41] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[23:54:41] [Server thread/INFO]: Time elapsed: 142 ms
+[23:54:41] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.2.1
+[23:54:41] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.5-1.20.6 (766)
+[23:54:41] [Server thread/INFO]: [Slimefun] Enabling Slimefun vDev - 1159
+[23:54:41] [Server thread/INFO]: [Slimefun] Paper was detected! Performance optimizations have been applied.
+[23:54:41] [Server thread/INFO]: [Slimefun] Creating directories...
+[23:54:41] [Server thread/INFO]: [Slimefun] Loading language files...
+[23:54:41] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[23:54:42] [Server thread/INFO]: [Slimefun] Loaded language "en"
+[23:54:42] [Server thread/INFO]: [Slimefun] Available languages: en, de, fr, it, es, ru, pl, uk, sv, nl, da, cs, ro, bg, pt, pt-BR, hu, lv, sk, vi, id, zh-CN, zh-TW, ja, ko, he, ar, tr, fa, th, tl
+[23:54:42] [Server thread/INFO]: [Slimefun] Using legacy storage for player data
+[23:54:42] [Server thread/INFO]: [Slimefun] Enabled Analytics Service
+[23:54:42] [Slimefun Metrics/INFO]: [Slimefun] MetricsModule does not exist, downloading...
+[23:54:42] [Server thread/INFO]: [Slimefun] Starting Auto-Updater...
+[23:54:42] [Server thread/INFO]: [Slimefun] Loading GEO-Resources...
+[23:54:42] [Slimefun Metrics/INFO]: [Slimefun] # Starting download of MetricsModule build: #29
+[23:54:42] [Server thread/INFO]: [Slimefun] Loading Tags...
+[23:54:42] [Server thread/INFO]: [Slimefun] Loading items...
+[23:54:42] [Slimefun Metrics/WARN]: [Slimefun] Failed to download the latest jar file from GitHub. Response code: 302
+[23:54:42] [Slimefun Metrics/WARN]: [Slimefun] Failed to start metrics as the file could not be downloaded.
+[23:54:43] [Server thread/INFO]: [Slimefun] Loading researches...
+[23:54:43] [Server thread/INFO]: [Slimefun] Loading Wiki pages...
+[23:54:43] [Server thread/INFO]: [Slimefun] Registering listeners...
+[23:54:43] [Server thread/INFO]: [Slimefun] Loading Third-Party plugin integrations...
+[23:54:43] [Server thread/INFO]: [Slimefun] Slimefun has finished loading in 1.8s
+[23:54:43] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.2.1
+[23:54:43] [Server thread/INFO]: [Towny] Enabling Towny v0.101.1.0
+[23:54:43] [Server thread/INFO]: ====================      Towny      ========================
+[23:54:44] [Server thread/INFO]: [Towny] Successfully loaded translations for 43 languages.
+[23:54:44] [Server thread/INFO]: [Towny] Config: Loaded 9 townblock types: shop, inn, arena, jail, default, bank, wilds, farm, embassy.
+[23:54:44] [Server thread/INFO]: [Towny] Database: [Load] flatfile [Save] flatfile
+[23:54:44] [Server thread/INFO]: [Towny] Database: Loaded in 22ms.
+[23:54:44] [ForkJoinPool.commonPool-worker-1/INFO]: [Towny] Cleaning up old backups...
+[23:54:44] [ForkJoinPool.commonPool-worker-1/INFO]: [Towny] Could not delete old backups.
+[23:54:44] [ForkJoinPool.commonPool-worker-1/INFO]: [Towny] Making backup...
+[23:54:44] [Folia Async Scheduler Thread #3/INFO]: [Towny] Time until a New Day: 12 hours, 5 minutes, 16 seconds
+[23:54:45] [Folia Async Scheduler Thread #3/INFO]: [Towny] Checking for updates...
+[23:54:45] [ForkJoinPool.commonPool-worker-1/INFO]: [Towny] Towny flatfiles and settings successfully backed up.
+[23:54:45] [Server thread/INFO]: [Towny] Searching for third-party plugins...
+[23:54:45] [Server thread/INFO]: [Towny] Plugins found: 
+[23:54:45] [Server thread/INFO]: [Towny]   Permissions: TownyPerms, BukkitPermissions
+[23:54:45] [Folia Async Scheduler Thread #3/INFO]: [Towny] New update available: 0.101.1.1 | Current version: 0.101.1.0
+[23:54:45] [Folia Async Scheduler Thread #3/INFO]: [Towny] Download it here: https://github.com/TownyAdvanced/Towny/releases/tag/0.101.1.1
+[23:54:45] [Server thread/INFO]: [Towny]   Add-ons: TownyChat v0.117
+[23:54:45] [Server thread/INFO]: [Towny]   Warning: No compatible Economy plugins found. Install
+                           Vault.jar or Reserve.jar with any of the supported eco
+                           systems. If you do not want an economy to be used, set
+                           using_economy: false in your Towny config.yml.
+[23:54:45] [Server thread/INFO]: =============================================================
+[23:54:45] [Server thread/INFO]: [Towny] Version: 0.101.1.0 - Plugin Enabled
+[23:54:45] [Server thread/INFO]: =============================================================
+[23:54:45] [Server thread/INFO]: [RealisticSeasons] Enabling RealisticSeasons v10.8.0
+[23:54:45] [Server thread/INFO]: [RealisticSeasons] [STDOUT] [Spigotunlocked.com] - COSMO
+[23:54:45] [Server thread/WARN]: Nag author(s): '[]' of 'RealisticSeasons v10.8.0' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[23:54:45] [Server thread/INFO]: [TownyChat] Enabling TownyChat v0.117
+[23:54:45] [Server thread/INFO]: [TownyChat] Towny version 0.101.1.0 found.
+[23:54:45] [Server thread/INFO]: [TownyChat] TownyChat creating default channels.yml file.
+[23:54:45] [Server thread/INFO]: [TownyChat] Default Channel set to general
+[23:54:46] [Server thread/INFO]: Running delayed init tasks
+[23:54:46] [Craft Scheduler Thread - 6 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[23:54:46] [Server thread/INFO]: [Slimefun] Collecting Snapshots of all Recipes...
+[23:54:46] [Server thread/INFO]: [Slimefun] Found 1,175 Recipes!
+[23:54:46] [Server thread/INFO]: 
+[23:54:46] [Server thread/INFO]: ######################### - Slimefun vDev - 1159 - #########################
+[23:54:46] [Server thread/INFO]: 
+[23:54:46] [Server thread/INFO]: Successfully loaded 555 Items and 258 Researches
+[23:54:46] [Server thread/INFO]: ( 555 Items from Slimefun, 0 Items from 0 Addons )
+[23:54:46] [Server thread/INFO]: 
+[23:54:46] [Server thread/INFO]: Slimefun is an Open-Source project that is kept alive by a large community.
+[23:54:46] [Server thread/INFO]: Consider helping us maintain this project by contributing on GitHub!
+[23:54:46] [Server thread/INFO]: 
+[23:54:46] [Server thread/INFO]:  - Source Code:  https://github.com/Slimefun/Slimefun4
+[23:54:46] [Server thread/INFO]:  - Wiki:         https://github.com/Slimefun/Slimefun4/wiki
+[23:54:46] [Server thread/INFO]:  - Addons:       https://github.com/Slimefun/Slimefun4/wiki/Addons
+[23:54:46] [Server thread/INFO]:  - Bug Reports:  https://github.com/Slimefun/Slimefun4/issues
+[23:54:46] [Server thread/INFO]:  - Discord:      https://discord.gg/slimefun
+[23:54:46] [Server thread/INFO]: 
+[23:54:46] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world"
+[23:54:46] [Server thread/INFO]: [Slimefun] This may take a long time...
+[23:54:46] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_nether"
+[23:54:46] [Server thread/INFO]: [Slimefun] This may take a long time...
+[23:54:46] [Server thread/INFO]: [Slimefun] Loading Blocks for World "world_the_end"
+[23:54:46] [Server thread/INFO]: [Slimefun] This may take a long time...
+[23:54:46] [Server thread/INFO]: [dough: protection] Loading Protection Modules...
+[23:54:46] [Server thread/INFO]: [dough: protection] This may happen more than once.
+[23:54:46] [Server thread/INFO]: [dough: protection] Loaded Protection Module "Towny v0.101.1.0"
+[23:54:46] [Craft Scheduler Thread - 7 - Slimefun/INFO]: [Slimefun] Slimefun is already up to date!
+[23:54:46] [Server thread/INFO]: [RealisticSeasons] [STDOUT] [Spigotunlocked.com] - COSMO
+[23:54:46] [Server thread/ERROR]: Biome: terralith:yellowstone could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:yellowstone could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:yellowstone could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_YELLOWSTONE.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:alpine_grove could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:alpine_grove could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Biome: terralith:sakura_grove could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_SAKURA_GROVE.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:birch_taiga could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_BIRCH_TAIGA.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:arid_highlands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_SAVANNA_BUSHES.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:haze_mountain could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_HAZE_MOUNTAIN.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:amethyst_canyon could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:amethyst_canyon could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_AMETHYST_RAINFOREST.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getSkyColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:694)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:blooming_plateau could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_BLOOMING.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:alpine_highlands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:alpine_highlands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:alpine_highlands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Biome: terralith:shield could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_SHIELD.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getFogColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:695)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:warped_mesa could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:warped_mesa could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_WARPED_MESA.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:skylands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:skylands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_SKYLANDS.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:fractured_savanna could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_SAVANNA.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:jungle_mountains could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_JUNGLE.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:moonlight_grove could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:moonlight_grove could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_MOONLIGHT_GROVE.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getSkyColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:694)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:painted_mountains could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_BADLANDS.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:alpha_islands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_ALPHA_ISLANDS.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:gravel_beach could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_BEACH.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:lavender_forest could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:lavender_forest could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_LAVENDER_FOREST.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getSkyColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:694)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:ancient_sands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_DESERT.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:basalt_cliffs could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_CLIFFS.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:temperate_highlands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_TEMPERATE_HIGHLANDS.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getFogColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:695)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:caldera could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_LOWER_MOUNTAINS.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:ashen_savanna could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Biome: terralith:hot_shrubland could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:hot_shrubland could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:shrubland could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_SHRUBLAND.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getSkyColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:694)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:yosemite_lowlands could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_YOSEMITE.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getFogColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:695)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:alpha_islands_winter could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_ALPHA_ISLANDS_WINTER.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:cloud_forest could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'water' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$1(BiomeSpecialEffects.java:199)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:199)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:cloud_forest could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_CLOUD_FOREST.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getSkyColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:694)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:warm_river could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_WARM_RIVER.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.getOptionalFieldInBiomea(CustomBiome1_20_R4.java:290)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.setGrassColor(CustomBiome1_20_R4.java:167)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:674)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:orchid_swamp could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_SWAMP.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getFogColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:695)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:emerald_peaks could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:emerald_peaks could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:499)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:emerald_peaks could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:siberian_taiga could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_SIBERIAN_TAIGA.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getFogColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:695)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:352)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: Biome: terralith:mirage_isles could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/WARN]: java.lang.IllegalStateException: Missing 'fog' color.
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.lambda$build$0(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.OptionalInt.orElseThrow(OptionalInt.java:273)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.world.level.biome.BiomeSpecialEffects$Builder.build(BiomeSpecialEffects.java:198)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.CustomBiome1_20_R4.register(CustomBiome1_20_R4.java:186)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:705)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/ERROR]: [RealisticSeasons] Can't get BiomeID of an unregistered biome!
+[23:54:46] [Server thread/ERROR]: Biome: terralith:mirage_isles could not be found. Aborting custom biome creation
+[23:54:46] [Server thread/ERROR]: Could not load file: TERRALITH_MIRAGE_ISLES.yml
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "me.casperge.interfaces.CustomBiome.getSkyColor()" is null
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.createSeasonsBiome(RealisticSeasons.java:694)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.loadFile(BiomeFileLoader.java:450)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:88)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/INFO]: terralith:emerald_peaks
+[23:54:46] [Server thread/WARN]: java.lang.NullPointerException
+[23:54:46] [Server thread/WARN]: 	at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.invoke.DirectMethodHandle.checkBase(DirectMethodHandle.java:547)
+[23:54:46] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.MethodHandleObjectFieldAccessorImpl.get(MethodHandleObjectFieldAccessorImpl.java:57)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.reflect.Field.get(Field.java:444)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons1_20_R4.NmsCode_20_R4.getBiomeColors(NmsCode_20_R4.java:148)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.registerMixedColorBiomes(BiomeFileLoader.java:550)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:141)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228)
+[23:54:46] [Server thread/WARN]: 	at RealisticSeasons-10.8.0.jar//me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101)
+[23:54:46] [Server thread/WARN]: 	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147)
+[23:54:46] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+[23:54:46] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+[23:54:46] [Server thread/WARN]: [RealisticSeasons] Task #23 for RealisticSeasons v10.8.0 generated an exception
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "base" is null
+	at RealisticSeasons-10.8.0.jar/me.casperge.realisticseasons1_20_R4.NmsCode_20_R4.getFieldInBiomea(NmsCode_20_R4.java:106) ~[RealisticSeasons-10.8.0.jar:?]
+	at RealisticSeasons-10.8.0.jar/me.casperge.realisticseasons1_20_R4.NmsCode_20_R4.getBiomeColors(NmsCode_20_R4.java:158) ~[RealisticSeasons-10.8.0.jar:?]
+	at RealisticSeasons-10.8.0.jar/me.casperge.realisticseasons.data.BiomeFileLoader.registerMixedColorBiomes(BiomeFileLoader.java:550) ~[RealisticSeasons-10.8.0.jar:?]
+	at RealisticSeasons-10.8.0.jar/me.casperge.realisticseasons.data.BiomeFileLoader.load(BiomeFileLoader.java:141) ~[RealisticSeasons-10.8.0.jar:?]
+	at RealisticSeasons-10.8.0.jar/me.casperge.realisticseasons.data.BiomeFileLoader.<init>(BiomeFileLoader.java:47) ~[RealisticSeasons-10.8.0.jar:?]
+	at RealisticSeasons-10.8.0.jar/me.casperge.realisticseasons.RealisticSeasons.enable(RealisticSeasons.java:228) ~[RealisticSeasons-10.8.0.jar:?]
+	at RealisticSeasons-10.8.0.jar/me.casperge.realisticseasons.RealisticSeasons$1.run(RealisticSeasons.java:167) ~[RealisticSeasons-10.8.0.jar:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:101) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:482) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1147) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323) ~[paper-1.20.6.jar:1.20.6-149-6e71f41]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[23:54:46] [Server thread/INFO]: [TownyChat] -******* TownyChat enabled *******-
+[23:54:46] [Server thread/INFO]: Done (33.030s)! For help, type "help"
+[23:54:46] [Server thread/INFO]: Timings Reset
+[23:55:18] [Server thread/INFO]: Unknown or incomplete command, see below for error
+IP<--[HERE]
+[23:55:19] [Server thread/INFO]: Unknown or incomplete command, see below for error
+ip<--[HERE]
+[23:55:25] [Server thread/INFO]: Made irapeniggers a server operator
+[23:55:44] [User Authenticator #0/INFO]: UUID of player iRapeNiggers is 8046aefe-d703-329a-9ba3-cfba87342948
+[23:55:45] [Server thread/INFO]: iRapeNiggers joined the game
+[23:55:45] [Server thread/INFO]: iRapeNiggers[/127.198.184.124:40733] logged in with entity id 93 at ([world]-717.5, 67.0, 502.5)
+[23:56:13] [Server thread/INFO]: iRapeNiggers lost connection: Disconnected
+[23:56:13] [Server thread/INFO]: iRapeNiggers left the game

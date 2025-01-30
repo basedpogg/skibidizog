@@ -1,0 +1,19 @@
+29 Jan 2025 23:54:44 [Server thread]: Database: [Load] flatfile [Save] flatfile
+29 Jan 2025 23:54:44 [Server thread]: Database: Loaded in 22ms.
+29 Jan 2025 23:54:44 [ForkJoinPool.commonPool-worker-1]: Cleaning up old backups...
+29 Jan 2025 23:54:44 [ForkJoinPool.commonPool-worker-1]: Could not delete old backups.
+29 Jan 2025 23:54:44 [ForkJoinPool.commonPool-worker-1]: Making backup...
+29 Jan 2025 23:54:44 [Folia Async Scheduler Thread #3]: Time until a New Day: 12 hours, 5 minutes, 16 seconds
+29 Jan 2025 23:54:45 [Folia Async Scheduler Thread #3]: Checking for updates...
+29 Jan 2025 23:54:45 [ForkJoinPool.commonPool-worker-1]: Towny flatfiles and settings successfully backed up.
+29 Jan 2025 23:54:45 [Server thread]: Searching for third-party plugins...
+29 Jan 2025 23:54:45 [Server thread]: Plugins found: 
+29 Jan 2025 23:54:45 [Server thread]:   Permissions: TownyPerms, BukkitPermissions
+29 Jan 2025 23:54:45 [Folia Async Scheduler Thread #3]: New update available: 0.101.1.1 | Current version: 0.101.1.0
+29 Jan 2025 23:54:45 [Folia Async Scheduler Thread #3]: Download it here: https://github.com/TownyAdvanced/Towny/releases/tag/0.101.1.1
+29 Jan 2025 23:54:45 [Server thread]:   Add-ons: TownyChat v0.117
+29 Jan 2025 23:54:45 [Server thread]:   Warning: No compatible Economy plugins found. Install
+                           Vault.jar or Reserve.jar with any of the supported eco
+                           systems. If you do not want an economy to be used, set
+                           using_economy: false in your Towny config.yml.
+29 Jan 2025 23:54:45 [Server thread]: Version: 0.101.1.0 - Plugin Enabled

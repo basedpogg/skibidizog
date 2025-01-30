@@ -1,0 +1,30 @@
+# ######################################
+#          Player Data                #
+# ######################################
+
+# Stores player data using UUIDs, do NOT edit
+
+ConfigId: 1.2.9-RELEASE # Used for config syncing purposes, do NOT edit
+49588b06-86ce-3594-b451-358d657bee44:
+  Temperature: 7.95
+  Thirst: 20
+  ThirstSaturation: 5.0
+  ThirstExhaustion: 2.0054000000000007
+  ThirstTickTimer: 80
+3a65e9bb-e52c-3627-9e81-cace8c113d51:
+  Temperature: 8.3
+  Thirst: 20
+  ThirstSaturation: 5.0
+  ThirstExhaustion: 3.4398000000000155
+  ThirstTickTimer: 80
+5eb76f79-b9e1-3b65-8a1c-3377c67f422b:
+  Temperature: 7.6000000000000005
+  Thirst: 6
+  ThirstSaturation: 5.0
+  ThirstExhaustion: 5.269999999999997
+  ThirstTickTimer: 80
+
+
+
+
+

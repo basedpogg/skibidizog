@@ -1,0 +1,17 @@
+worlds:
+  world: FALL
+dates:
+  world:
+    day: 19
+    month: 10
+    year: 0
+players:
+  colorsdisabled: []
+  tempdisabled: []
+  particlesdisabled: []
+  knownplayers:
+  - 49588b06-86ce-3594-b451-358d657bee44
+  fahrenheit-mode: []
+temperature:
+  world: true
+time-paused: []
